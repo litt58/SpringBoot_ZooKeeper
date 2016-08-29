@@ -1,0 +1,12 @@
+server:
+  port: 9999
+  contextPath : /jzli
+#Swagger 访问地址 ip:端口/.../swagger-ui.html
+
+logging:
+  level: info
+  file: ./log/info.log
+
+
+
+
