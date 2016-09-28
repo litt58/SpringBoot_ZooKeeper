@@ -18,7 +18,7 @@ import java.util.Arrays;
 public class AccessLogAspectConfig {
 
     private Logger logger = Logger.getLogger(getClass());
-    private ThreadLocal<Long> startTime = new ThreadLocal<>();
+    private ThreadLocal<Long> startTimeRecorder = new ThreadLocal<>();
 
     @Pointcut("execution(public * com.jzli.controller..*.*(..))")
     public void access() {
@@ -27,7 +27,7 @@ public class AccessLogAspectConfig {
     @Before("access()")
     public void doBefore(JoinPoint joinPoint) throws Throwable {
         //记录开始时间
-        startTime.set(System.currentTimeMillis());
+        startTimeRecorder.set(System.currentTimeMillis());
         // 接收到请求，记录请求内容
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
@@ -45,7 +45,7 @@ public class AccessLogAspectConfig {
     public void doAfterReturning(Object result) throws Throwable {
         // 处理完请求，返回内容
         logger.info("RESPONSE RESULT: " + result);
-        logger.info("SPEND TIME : " + (System.currentTimeMillis() - startTime.get()) + "ms");
+        logger.info("SPEND TIME : " + (System.currentTimeMillis() - startTimeRecorder.get()) + "ms");
 
     }
 
