@@ -1552,3 +1552,677 @@
 2016-09-28 15:35:11.275  INFO 6596 --- [http-nio-9999-exec-6] com.jzli.config.AccessLogAspect          : ARGS : []
 2016-09-28 15:35:11.276  INFO 6596 --- [http-nio-9999-exec-6] com.jzli.config.AccessLogAspect          : RESPONSE : hello
 2016-09-28 15:35:11.276  INFO 6596 --- [http-nio-9999-exec-6] com.jzli.config.AccessLogAspect          : SPEND TIME : 6ms
+2016-09-28 15:37:45.683  INFO 1072 --- [main] com.jzli.Application                     : Starting Application on lijinzhao-PC with PID 1072 (F:\mySpace\SpringBoot_Swagger2\build\classes\main started by li.jinzhao in F:\mySpace\SpringBoot_Swagger2)
+2016-09-28 15:37:45.699  INFO 1072 --- [main] com.jzli.Application                     : No active profile set, falling back to default profiles: default
+2016-09-28 15:37:45.859  INFO 1072 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aa078fd: startup date [Wed Sep 28 15:37:45 CST 2016]; root of context hierarchy
+2016-09-28 15:37:49.257  INFO 1072 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9999 (http)
+2016-09-28 15:37:49.282  INFO 1072 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-28 15:37:49.285  INFO 1072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-09-28 15:37:49.471  INFO 1072 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jzli]   : Initializing Spring embedded WebApplicationContext
+2016-09-28 15:37:49.472  INFO 1072 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3618 ms
+2016-09-28 15:37:50.290  INFO 1072 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-28 15:37:50.298  INFO 1072 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-28 15:37:50.299  INFO 1072 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-28 15:37:50.300  INFO 1072 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-28 15:37:50.300  INFO 1072 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-28 15:37:51.382  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{name}],methods=[GET]}" onto public com.jzli.bean.User com.jzli.controller.UserController.getUser(java.lang.String)
+2016-09-28 15:37:51.384  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.jzli.controller.UserController.hello()
+2016-09-28 15:37:51.386  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2016-09-28 15:37:51.390  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2016-09-28 15:37:51.391  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2016-09-28 15:37:51.392  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2016-09-28 15:37:51.397  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-28 15:37:51.397  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-28 15:37:51.818  INFO 1072 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aa078fd: startup date [Wed Sep 28 15:37:45 CST 2016]; root of context hierarchy
+2016-09-28 15:37:51.918  INFO 1072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:37:51.919  INFO 1072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:37:51.983  INFO 1072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:37:52.372  INFO 1072 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-28 15:37:52.390  INFO 1072 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2016-09-28 15:37:52.424  INFO 1072 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2016-09-28 15:37:52.437  INFO 1072 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2016-09-28 15:37:52.444  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:52.449  INFO 1072 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: error belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.BasicErrorController}]] 
+2016-09-28 15:37:52.451  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:52.452  INFO 1072 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: errorHtml belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.BasicErrorController}]] 
+2016-09-28 15:37:52.456  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:37:52.456  INFO 1072 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: hello belongs to groups: [[ResourceGroup{groupName='用户接口', position=0, controller=com.jzli.controller.UserController}]] 
+2016-09-28 15:37:52.457  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:37:52.457  INFO 1072 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='用户接口', position=0, controller=com.jzli.controller.UserController}]] 
+2016-09-28 15:37:52.462  INFO 1072 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/basic-error-controller Description: basic-error-controller Position: 0
+2016-09-28 15:37:52.464  INFO 1072 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/用户接口 Description: 用户接口 Position: 0
+2016-09-28 15:37:52.494  INFO 1072 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:37:52.494  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:37:52.502  INFO 1072 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:37:52.502  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:37:52.517  INFO 1072 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /error.org.springframework.boot.autoconfigure.web.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+2016-09-28 15:37:52.518  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+2016-09-28 15:37:52.537  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.092  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.103  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.106  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.108  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.110  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.112  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.114  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.117  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.119  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.121  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.123  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.125  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.127  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.129  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.132  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:37:53.138  INFO 1072 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:37:53.139  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:37:53.141  INFO 1072 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:37:53.141  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:37:53.198  INFO 1072 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:37:53.199  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:37:53.199  INFO 1072 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:37:53.199  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:37:53.201  INFO 1072 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.View(true)
+2016-09-28 15:37:53.201  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+2016-09-28 15:37:53.203  INFO 1072 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.View(true)
+2016-09-28 15:37:53.204  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+2016-09-28 15:37:53.205  INFO 1072 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /error.org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+2016-09-28 15:37:53.205  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+2016-09-28 15:37:53.207  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.209  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.213  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.215  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.217  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.219  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.221  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.223  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.224  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.226  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.228  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.230  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.231  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.233  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.235  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.237  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:37:53.265  INFO 1072 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:37:53.265  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.jzli.bean.User(true)
+2016-09-28 15:37:53.266  INFO 1072 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.jzli.bean.User(true)
+2016-09-28 15:37:53.266  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.jzli.bean.User(true)
+2016-09-28 15:37:53.274  INFO 1072 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:37:53.275  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.jzli.bean.User(true)
+2016-09-28 15:37:53.275  INFO 1072 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.jzli.bean.User(true)
+2016-09-28 15:37:53.275  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.jzli.bean.User(true)
+2016-09-28 15:37:53.276  INFO 1072 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /user/{name}.com.jzli.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2016-09-28 15:37:53.276  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /user/{name}.com.jzli.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2016-09-28 15:37:53.285  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:37:53.291  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:37:53.297  INFO 1072 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:37:53.297  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.jzli.bean.User(true)
+2016-09-28 15:37:53.298  INFO 1072 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:37:53.298  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.jzli.bean.User(true)
+2016-09-28 15:37:53.298  INFO 1072 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2016-09-28 15:37:53.299  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2016-09-28 15:37:53.299  INFO 1072 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2016-09-28 15:37:53.300  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2016-09-28 15:37:53.300  INFO 1072 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /hello.com.jzli.controller.UserController.hello.DefaultGenericTypeNamingStrategy
+2016-09-28 15:37:53.300  INFO 1072 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /hello.com.jzli.controller.UserController.hello.DefaultGenericTypeNamingStrategy
+2016-09-28 15:37:53.302  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:37:53.307  INFO 1072 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:37:53.479  INFO 1072 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9999 (http)
+2016-09-28 15:37:53.488  INFO 1072 --- [main] com.jzli.Application                     : Started Application in 8.834 seconds (JVM running for 9.647)
+2016-09-28 15:38:18.373  INFO 6640 --- [main] com.jzli.Application                     : Starting Application on lijinzhao-PC with PID 6640 (F:\mySpace\SpringBoot_Swagger2\build\classes\main started by li.jinzhao in F:\mySpace\SpringBoot_Swagger2)
+2016-09-28 15:38:18.383  INFO 6640 --- [main] com.jzli.Application                     : No active profile set, falling back to default profiles: default
+2016-09-28 15:38:18.793  INFO 6640 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aa078fd: startup date [Wed Sep 28 15:38:18 CST 2016]; root of context hierarchy
+2016-09-28 15:38:22.110  INFO 6640 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9999 (http)
+2016-09-28 15:38:22.133  INFO 6640 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-28 15:38:22.134  INFO 6640 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-09-28 15:38:22.303  INFO 6640 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jzli]   : Initializing Spring embedded WebApplicationContext
+2016-09-28 15:38:22.303  INFO 6640 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3515 ms
+2016-09-28 15:38:23.002  INFO 6640 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-28 15:38:23.009  INFO 6640 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-28 15:38:23.010  INFO 6640 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-28 15:38:23.010  INFO 6640 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-28 15:38:23.011  INFO 6640 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-28 15:38:24.051  INFO 6640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{name}],methods=[GET]}" onto public com.jzli.bean.User com.jzli.controller.UserController.getUser(java.lang.String)
+2016-09-28 15:38:24.053  INFO 6640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.jzli.controller.UserController.hello()
+2016-09-28 15:38:24.054  INFO 6640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2016-09-28 15:38:24.059  INFO 6640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2016-09-28 15:38:24.061  INFO 6640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2016-09-28 15:38:24.061  INFO 6640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2016-09-28 15:38:24.067  INFO 6640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-28 15:38:24.068  INFO 6640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-28 15:38:24.497  INFO 6640 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aa078fd: startup date [Wed Sep 28 15:38:18 CST 2016]; root of context hierarchy
+2016-09-28 15:38:24.595  INFO 6640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:38:24.596  INFO 6640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:38:24.659  INFO 6640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:38:25.077  INFO 6640 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-28 15:38:25.096  INFO 6640 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2016-09-28 15:38:25.127  INFO 6640 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2016-09-28 15:38:25.142  INFO 6640 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2016-09-28 15:38:25.151  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.155  INFO 6640 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: error belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.BasicErrorController}]] 
+2016-09-28 15:38:25.157  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.157  INFO 6640 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: errorHtml belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.BasicErrorController}]] 
+2016-09-28 15:38:25.161  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:38:25.162  INFO 6640 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: hello belongs to groups: [[ResourceGroup{groupName='用户接口', position=0, controller=com.jzli.controller.UserController}]] 
+2016-09-28 15:38:25.163  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:38:25.163  INFO 6640 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='用户接口', position=0, controller=com.jzli.controller.UserController}]] 
+2016-09-28 15:38:25.169  INFO 6640 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/用户接口 Description: 用户接口 Position: 0
+2016-09-28 15:38:25.171  INFO 6640 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/basic-error-controller Description: basic-error-controller Position: 0
+2016-09-28 15:38:25.198  INFO 6640 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:38:25.199  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:38:25.205  INFO 6640 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:38:25.206  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:38:25.221  INFO 6640 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /error.org.springframework.boot.autoconfigure.web.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+2016-09-28 15:38:25.222  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+2016-09-28 15:38:25.421  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.427  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.435  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.437  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.440  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.442  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.443  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.446  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.447  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.450  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.452  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.456  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.458  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.460  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.462  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.464  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:38:25.470  INFO 6640 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:38:25.471  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:38:25.474  INFO 6640 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:38:25.474  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:38:25.523  INFO 6640 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:38:25.523  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:38:25.524  INFO 6640 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:38:25.524  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:38:25.525  INFO 6640 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.View(true)
+2016-09-28 15:38:25.526  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+2016-09-28 15:38:25.529  INFO 6640 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.View(true)
+2016-09-28 15:38:25.529  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+2016-09-28 15:38:25.530  INFO 6640 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /error.org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+2016-09-28 15:38:25.531  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+2016-09-28 15:38:25.532  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.534  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.536  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.538  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.540  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.542  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.544  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.546  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.548  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.550  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.552  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.554  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.555  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.558  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.559  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.561  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:38:25.592  INFO 6640 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:38:25.592  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.jzli.bean.User(true)
+2016-09-28 15:38:25.593  INFO 6640 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.jzli.bean.User(true)
+2016-09-28 15:38:25.593  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.jzli.bean.User(true)
+2016-09-28 15:38:25.604  INFO 6640 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:38:25.604  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.jzli.bean.User(true)
+2016-09-28 15:38:25.604  INFO 6640 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.jzli.bean.User(true)
+2016-09-28 15:38:25.604  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.jzli.bean.User(true)
+2016-09-28 15:38:25.605  INFO 6640 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /user/{name}.com.jzli.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2016-09-28 15:38:25.605  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /user/{name}.com.jzli.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2016-09-28 15:38:25.615  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:38:25.622  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:38:25.627  INFO 6640 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:38:25.628  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.jzli.bean.User(true)
+2016-09-28 15:38:25.628  INFO 6640 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:38:25.628  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.jzli.bean.User(true)
+2016-09-28 15:38:25.629  INFO 6640 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2016-09-28 15:38:25.629  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2016-09-28 15:38:25.629  INFO 6640 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2016-09-28 15:38:25.629  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2016-09-28 15:38:25.630  INFO 6640 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /hello.com.jzli.controller.UserController.hello.DefaultGenericTypeNamingStrategy
+2016-09-28 15:38:25.630  INFO 6640 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /hello.com.jzli.controller.UserController.hello.DefaultGenericTypeNamingStrategy
+2016-09-28 15:38:25.632  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:38:25.642  INFO 6640 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:38:25.786  INFO 6640 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9999 (http)
+2016-09-28 15:38:25.795  INFO 6640 --- [main] com.jzli.Application                     : Started Application in 8.405 seconds (JVM running for 9.407)
+2016-09-28 15:39:33.798  INFO 6640 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/jzli]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-28 15:39:33.799  INFO 6640 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-28 15:39:33.841  INFO 6640 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2016-09-28 15:39:40.011  INFO 6640 --- [http-nio-9999-exec-6] com.jzli.config.AccessLogAspectConfig    : URL : http://localhost:9999/jzli/hello
+2016-09-28 15:39:40.012  INFO 6640 --- [http-nio-9999-exec-6] com.jzli.config.AccessLogAspectConfig    : HTTP_METHOD : GET
+2016-09-28 15:39:40.013  INFO 6640 --- [http-nio-9999-exec-6] com.jzli.config.AccessLogAspectConfig    : IP : 0:0:0:0:0:0:0:1
+2016-09-28 15:39:40.013  INFO 6640 --- [http-nio-9999-exec-6] com.jzli.config.AccessLogAspectConfig    : CLASS_METHOD : com.jzli.controller.UserController.hello
+2016-09-28 15:39:40.013  INFO 6640 --- [http-nio-9999-exec-6] com.jzli.config.AccessLogAspectConfig    : ARGS : []
+2016-09-28 15:39:40.021  INFO 6640 --- [http-nio-9999-exec-6] com.jzli.config.AccessLogAspectConfig    : RESPONSE : hello
+2016-09-28 15:39:40.022  INFO 6640 --- [http-nio-9999-exec-6] com.jzli.config.AccessLogAspectConfig    : SPEND TIME : 11ms
+2016-09-28 15:39:55.954  INFO 6640 --- [http-nio-9999-exec-8] com.jzli.config.AccessLogAspectConfig    : URL : http://localhost:9999/jzli/hello
+2016-09-28 15:39:55.955  INFO 6640 --- [http-nio-9999-exec-8] com.jzli.config.AccessLogAspectConfig    : HTTP_METHOD : GET
+2016-09-28 15:39:55.956  INFO 6640 --- [http-nio-9999-exec-8] com.jzli.config.AccessLogAspectConfig    : IP : 0:0:0:0:0:0:0:1
+2016-09-28 15:39:55.956  INFO 6640 --- [http-nio-9999-exec-8] com.jzli.config.AccessLogAspectConfig    : CLASS_METHOD : com.jzli.controller.UserController.hello
+2016-09-28 15:39:55.956  INFO 6640 --- [http-nio-9999-exec-8] com.jzli.config.AccessLogAspectConfig    : ARGS : []
+2016-09-28 15:39:55.956  INFO 6640 --- [http-nio-9999-exec-8] com.jzli.config.AccessLogAspectConfig    : RESPONSE : hello
+2016-09-28 15:39:55.956  INFO 6640 --- [http-nio-9999-exec-8] com.jzli.config.AccessLogAspectConfig    : SPEND TIME : 2ms
+2016-09-28 15:40:19.536  INFO 6640 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : URL : http://localhost:9999/jzli/user/%E6%96%AF%E8%92%82%E8%8A%AC%E6%A3%AE
+2016-09-28 15:40:19.538  INFO 6640 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : HTTP_METHOD : GET
+2016-09-28 15:40:19.538  INFO 6640 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : IP : 0:0:0:0:0:0:0:1
+2016-09-28 15:40:19.538  INFO 6640 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : CLASS_METHOD : com.jzli.controller.UserController.getUser
+2016-09-28 15:40:19.538  INFO 6640 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : ARGS : [斯蒂芬森]
+2016-09-28 15:40:19.538  INFO 6640 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : RESPONSE : com.jzli.bean.User@7c16157b
+2016-09-28 15:40:19.538  INFO 6640 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : SPEND TIME : 2ms
+2016-09-28 15:42:19.631  INFO 6028 --- [main] com.jzli.Application                     : Starting Application on lijinzhao-PC with PID 6028 (F:\mySpace\SpringBoot_Swagger2\build\classes\main started by li.jinzhao in F:\mySpace\SpringBoot_Swagger2)
+2016-09-28 15:42:19.637  INFO 6028 --- [main] com.jzli.Application                     : No active profile set, falling back to default profiles: default
+2016-09-28 15:42:19.716  INFO 6028 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aa078fd: startup date [Wed Sep 28 15:42:19 CST 2016]; root of context hierarchy
+2016-09-28 15:42:23.557  INFO 6028 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9999 (http)
+2016-09-28 15:42:23.580  INFO 6028 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-28 15:42:23.582  INFO 6028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-09-28 15:42:23.766  INFO 6028 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jzli]   : Initializing Spring embedded WebApplicationContext
+2016-09-28 15:42:23.767  INFO 6028 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4056 ms
+2016-09-28 15:42:24.469  INFO 6028 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-28 15:42:24.477  INFO 6028 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-28 15:42:24.478  INFO 6028 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-28 15:42:24.478  INFO 6028 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-28 15:42:24.479  INFO 6028 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-28 15:42:25.558  INFO 6028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{name}],methods=[GET]}" onto public com.jzli.bean.User com.jzli.controller.UserController.getUser(java.lang.String)
+2016-09-28 15:42:25.559  INFO 6028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.jzli.controller.UserController.hello()
+2016-09-28 15:42:25.560  INFO 6028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2016-09-28 15:42:25.566  INFO 6028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2016-09-28 15:42:25.567  INFO 6028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2016-09-28 15:42:25.567  INFO 6028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2016-09-28 15:42:25.572  INFO 6028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-28 15:42:25.573  INFO 6028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-28 15:42:26.015  INFO 6028 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aa078fd: startup date [Wed Sep 28 15:42:19 CST 2016]; root of context hierarchy
+2016-09-28 15:42:26.123  INFO 6028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:42:26.124  INFO 6028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:42:26.191  INFO 6028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:42:26.628  INFO 6028 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-28 15:42:26.647  INFO 6028 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2016-09-28 15:42:26.681  INFO 6028 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2016-09-28 15:42:26.695  INFO 6028 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2016-09-28 15:42:26.702  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:26.705  INFO 6028 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: error belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.BasicErrorController}]] 
+2016-09-28 15:42:26.707  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:26.708  INFO 6028 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: errorHtml belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.BasicErrorController}]] 
+2016-09-28 15:42:26.712  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:42:26.712  INFO 6028 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: hello belongs to groups: [[ResourceGroup{groupName='用户接口', position=0, controller=com.jzli.controller.UserController}]] 
+2016-09-28 15:42:26.713  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:42:26.713  INFO 6028 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='用户接口', position=0, controller=com.jzli.controller.UserController}]] 
+2016-09-28 15:42:26.719  INFO 6028 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/basic-error-controller Description: basic-error-controller Position: 0
+2016-09-28 15:42:26.722  INFO 6028 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/用户接口 Description: 用户接口 Position: 0
+2016-09-28 15:42:26.751  INFO 6028 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:42:26.752  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:42:26.758  INFO 6028 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:42:26.759  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:42:27.006  INFO 6028 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /error.org.springframework.boot.autoconfigure.web.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+2016-09-28 15:42:27.006  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+2016-09-28 15:42:27.027  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.033  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.040  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.042  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.045  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.047  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.049  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.051  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.053  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.056  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.058  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.061  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.063  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.066  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.068  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.072  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:42:27.080  INFO 6028 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:42:27.080  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:42:27.082  INFO 6028 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:42:27.082  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:42:27.131  INFO 6028 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:42:27.131  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:42:27.132  INFO 6028 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:42:27.133  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:42:27.134  INFO 6028 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.View(true)
+2016-09-28 15:42:27.135  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+2016-09-28 15:42:27.137  INFO 6028 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.View(true)
+2016-09-28 15:42:27.138  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+2016-09-28 15:42:27.139  INFO 6028 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /error.org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+2016-09-28 15:42:27.139  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+2016-09-28 15:42:27.141  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.143  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.145  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.147  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.149  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.151  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.153  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.156  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.157  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.159  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.160  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.162  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.164  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.165  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.167  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.169  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:42:27.198  INFO 6028 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:42:27.198  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.jzli.bean.User(true)
+2016-09-28 15:42:27.199  INFO 6028 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.jzli.bean.User(true)
+2016-09-28 15:42:27.199  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.jzli.bean.User(true)
+2016-09-28 15:42:27.210  INFO 6028 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:42:27.210  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.jzli.bean.User(true)
+2016-09-28 15:42:27.211  INFO 6028 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.jzli.bean.User(true)
+2016-09-28 15:42:27.211  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.jzli.bean.User(true)
+2016-09-28 15:42:27.212  INFO 6028 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /user/{name}.com.jzli.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2016-09-28 15:42:27.212  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /user/{name}.com.jzli.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2016-09-28 15:42:27.222  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:42:27.234  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:42:27.240  INFO 6028 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:42:27.241  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.jzli.bean.User(true)
+2016-09-28 15:42:27.241  INFO 6028 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:42:27.241  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.jzli.bean.User(true)
+2016-09-28 15:42:27.242  INFO 6028 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2016-09-28 15:42:27.242  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2016-09-28 15:42:27.243  INFO 6028 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2016-09-28 15:42:27.243  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2016-09-28 15:42:27.244  INFO 6028 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /hello.com.jzli.controller.UserController.hello.DefaultGenericTypeNamingStrategy
+2016-09-28 15:42:27.244  INFO 6028 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /hello.com.jzli.controller.UserController.hello.DefaultGenericTypeNamingStrategy
+2016-09-28 15:42:27.245  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:42:27.251  INFO 6028 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:42:27.367  INFO 6028 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9999 (http)
+2016-09-28 15:42:27.377  INFO 6028 --- [main] com.jzli.Application                     : Started Application in 8.669 seconds (JVM running for 9.394)
+2016-09-28 15:43:21.646  INFO 6028 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/jzli]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-28 15:43:21.646  INFO 6028 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-28 15:43:21.669  INFO 6028 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2016-09-28 15:43:26.463  INFO 6028 --- [http-nio-9999-exec-5] com.jzli.config.AccessLogAspectConfig    : URL : http://localhost:9999/jzli/hello
+2016-09-28 15:43:26.463  INFO 6028 --- [http-nio-9999-exec-5] com.jzli.config.AccessLogAspectConfig    : HTTP_METHOD : GET
+2016-09-28 15:43:26.464  INFO 6028 --- [http-nio-9999-exec-5] com.jzli.config.AccessLogAspectConfig    : IP : 0:0:0:0:0:0:0:1
+2016-09-28 15:43:26.465  INFO 6028 --- [http-nio-9999-exec-5] com.jzli.config.AccessLogAspectConfig    : CLASS_METHOD : com.jzli.controller.UserController.hello
+2016-09-28 15:43:26.466  INFO 6028 --- [http-nio-9999-exec-5] com.jzli.config.AccessLogAspectConfig    : ARGS : []
+2016-09-28 15:43:26.481  INFO 6028 --- [http-nio-9999-exec-5] com.jzli.config.AccessLogAspectConfig    : SPEND TIME : 18ms
+2016-09-28 15:43:26.481  INFO 6028 --- [http-nio-9999-exec-5] com.jzli.config.AccessLogAspectConfig    : RESPONSE : hello
+2016-09-28 15:44:30.194  INFO 6340 --- [main] com.jzli.Application                     : Starting Application on lijinzhao-PC with PID 6340 (F:\mySpace\SpringBoot_Swagger2\build\classes\main started by li.jinzhao in F:\mySpace\SpringBoot_Swagger2)
+2016-09-28 15:44:30.203  INFO 6340 --- [main] com.jzli.Application                     : No active profile set, falling back to default profiles: default
+2016-09-28 15:44:30.505  INFO 6340 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aa078fd: startup date [Wed Sep 28 15:44:30 CST 2016]; root of context hierarchy
+2016-09-28 15:44:34.063  INFO 6340 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9999 (http)
+2016-09-28 15:44:34.082  INFO 6340 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-28 15:44:34.084  INFO 6340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-09-28 15:44:34.275  INFO 6340 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jzli]   : Initializing Spring embedded WebApplicationContext
+2016-09-28 15:44:34.276  INFO 6340 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3776 ms
+2016-09-28 15:44:34.943  INFO 6340 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-28 15:44:34.950  INFO 6340 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-28 15:44:34.951  INFO 6340 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-28 15:44:34.951  INFO 6340 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-28 15:44:34.951  INFO 6340 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-28 15:44:35.961  INFO 6340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{name}],methods=[GET]}" onto public com.jzli.bean.User com.jzli.controller.UserController.getUser(java.lang.String)
+2016-09-28 15:44:35.963  INFO 6340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.jzli.controller.UserController.hello()
+2016-09-28 15:44:35.965  INFO 6340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2016-09-28 15:44:35.970  INFO 6340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2016-09-28 15:44:35.970  INFO 6340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2016-09-28 15:44:35.971  INFO 6340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2016-09-28 15:44:35.976  INFO 6340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-28 15:44:35.976  INFO 6340 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-28 15:44:36.403  INFO 6340 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aa078fd: startup date [Wed Sep 28 15:44:30 CST 2016]; root of context hierarchy
+2016-09-28 15:44:36.496  INFO 6340 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:44:36.497  INFO 6340 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:44:36.565  INFO 6340 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:44:36.962  INFO 6340 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-28 15:44:36.978  INFO 6340 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2016-09-28 15:44:37.004  INFO 6340 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2016-09-28 15:44:37.016  INFO 6340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2016-09-28 15:44:37.022  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.024  INFO 6340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: error belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.BasicErrorController}]] 
+2016-09-28 15:44:37.026  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.026  INFO 6340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: errorHtml belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.BasicErrorController}]] 
+2016-09-28 15:44:37.031  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:44:37.031  INFO 6340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: hello belongs to groups: [[ResourceGroup{groupName='用户接口', position=0, controller=com.jzli.controller.UserController}]] 
+2016-09-28 15:44:37.033  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:44:37.033  INFO 6340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='用户接口', position=0, controller=com.jzli.controller.UserController}]] 
+2016-09-28 15:44:37.038  INFO 6340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/用户接口 Description: 用户接口 Position: 0
+2016-09-28 15:44:37.040  INFO 6340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/basic-error-controller Description: basic-error-controller Position: 0
+2016-09-28 15:44:37.068  INFO 6340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:44:37.068  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:44:37.074  INFO 6340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:44:37.075  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:44:37.087  INFO 6340 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /error.org.springframework.boot.autoconfigure.web.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+2016-09-28 15:44:37.087  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+2016-09-28 15:44:37.441  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.448  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.453  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.455  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.458  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.460  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.462  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.464  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.466  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.468  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.470  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.473  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.475  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.477  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.479  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.481  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:44:37.487  INFO 6340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:44:37.488  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:44:37.490  INFO 6340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:44:37.490  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:44:37.532  INFO 6340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:44:37.532  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:44:37.533  INFO 6340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:44:37.533  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:44:37.535  INFO 6340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.View(true)
+2016-09-28 15:44:37.535  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+2016-09-28 15:44:37.538  INFO 6340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.View(true)
+2016-09-28 15:44:37.538  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+2016-09-28 15:44:37.539  INFO 6340 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /error.org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+2016-09-28 15:44:37.539  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+2016-09-28 15:44:37.541  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.544  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.546  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.549  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.551  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.553  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.555  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.557  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.559  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.561  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.562  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.564  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.566  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.567  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.569  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.571  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:44:37.597  INFO 6340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:44:37.597  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.jzli.bean.User(true)
+2016-09-28 15:44:37.598  INFO 6340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.jzli.bean.User(true)
+2016-09-28 15:44:37.598  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.jzli.bean.User(true)
+2016-09-28 15:44:37.606  INFO 6340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:44:37.606  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.jzli.bean.User(true)
+2016-09-28 15:44:37.607  INFO 6340 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.jzli.bean.User(true)
+2016-09-28 15:44:37.607  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.jzli.bean.User(true)
+2016-09-28 15:44:37.607  INFO 6340 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /user/{name}.com.jzli.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2016-09-28 15:44:37.607  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /user/{name}.com.jzli.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2016-09-28 15:44:37.615  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:44:37.621  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:44:37.627  INFO 6340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:44:37.627  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.jzli.bean.User(true)
+2016-09-28 15:44:37.627  INFO 6340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:44:37.628  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.jzli.bean.User(true)
+2016-09-28 15:44:37.628  INFO 6340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2016-09-28 15:44:37.628  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2016-09-28 15:44:37.628  INFO 6340 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2016-09-28 15:44:37.628  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2016-09-28 15:44:37.629  INFO 6340 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /hello.com.jzli.controller.UserController.hello.DefaultGenericTypeNamingStrategy
+2016-09-28 15:44:37.629  INFO 6340 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /hello.com.jzli.controller.UserController.hello.DefaultGenericTypeNamingStrategy
+2016-09-28 15:44:37.630  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:44:37.636  INFO 6340 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:44:37.772  INFO 6340 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9999 (http)
+2016-09-28 15:44:37.781  INFO 6340 --- [main] com.jzli.Application                     : Started Application in 8.514 seconds (JVM running for 9.339)
+2016-09-28 15:47:33.888  INFO 6340 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/jzli]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-28 15:47:33.888  INFO 6340 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-28 15:47:33.929  INFO 6340 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2016-09-28 15:47:33.991  INFO 6340 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : REQUEST URL : http://localhost:9999/jzli/hello
+2016-09-28 15:47:33.991  INFO 6340 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : REQUEST HTTP_METHOD : GET
+2016-09-28 15:47:33.993  INFO 6340 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : REQUEST IP : 0:0:0:0:0:0:0:1
+2016-09-28 15:47:33.994  INFO 6340 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : REQUEST CLASS_METHOD : com.jzli.controller.UserController.hello
+2016-09-28 15:47:33.994  INFO 6340 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : REQUEST ARGS : []
+2016-09-28 15:47:34.012  INFO 6340 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : RESPONSE RESULT: hello
+2016-09-28 15:47:34.013  INFO 6340 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : RESPONSE SPEND TIME : 28ms
+2016-09-28 15:48:35.309  INFO 4620 --- [main] com.jzli.Application                     : Starting Application on lijinzhao-PC with PID 4620 (F:\mySpace\SpringBoot_Swagger2\build\classes\main started by li.jinzhao in F:\mySpace\SpringBoot_Swagger2)
+2016-09-28 15:48:35.314  INFO 4620 --- [main] com.jzli.Application                     : No active profile set, falling back to default profiles: default
+2016-09-28 15:48:35.452  INFO 4620 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aa078fd: startup date [Wed Sep 28 15:48:35 CST 2016]; root of context hierarchy
+2016-09-28 15:48:39.333  INFO 4620 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9999 (http)
+2016-09-28 15:48:39.364  INFO 4620 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-28 15:48:39.366  INFO 4620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-09-28 15:48:39.618  INFO 4620 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/jzli]   : Initializing Spring embedded WebApplicationContext
+2016-09-28 15:48:39.618  INFO 4620 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4171 ms
+2016-09-28 15:48:40.475  INFO 4620 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-28 15:48:40.483  INFO 4620 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-28 15:48:40.484  INFO 4620 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-28 15:48:40.485  INFO 4620 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-28 15:48:40.485  INFO 4620 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-28 15:48:41.481  INFO 4620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{name}],methods=[GET]}" onto public com.jzli.bean.User com.jzli.controller.UserController.getUser(java.lang.String)
+2016-09-28 15:48:41.483  INFO 4620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.jzli.controller.UserController.hello()
+2016-09-28 15:48:41.484  INFO 4620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2016-09-28 15:48:41.489  INFO 4620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2016-09-28 15:48:41.490  INFO 4620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2016-09-28 15:48:41.491  INFO 4620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2016-09-28 15:48:41.496  INFO 4620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-28 15:48:41.497  INFO 4620 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-28 15:48:42.087  INFO 4620 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3aa078fd: startup date [Wed Sep 28 15:48:35 CST 2016]; root of context hierarchy
+2016-09-28 15:48:42.200  INFO 4620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:48:42.200  INFO 4620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:48:42.271  INFO 4620 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 15:48:42.625  INFO 4620 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-28 15:48:42.644  INFO 4620 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2016-09-28 15:48:42.682  INFO 4620 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2016-09-28 15:48:42.696  INFO 4620 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2016-09-28 15:48:42.702  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:42.705  INFO 4620 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: error belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.BasicErrorController}]] 
+2016-09-28 15:48:42.706  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:42.707  INFO 4620 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: errorHtml belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.BasicErrorController}]] 
+2016-09-28 15:48:42.711  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:48:42.711  INFO 4620 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: hello belongs to groups: [[ResourceGroup{groupName='用户接口', position=0, controller=com.jzli.controller.UserController}]] 
+2016-09-28 15:48:42.712  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:48:42.712  INFO 4620 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='用户接口', position=0, controller=com.jzli.controller.UserController}]] 
+2016-09-28 15:48:42.718  INFO 4620 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/basic-error-controller Description: basic-error-controller Position: 0
+2016-09-28 15:48:42.719  INFO 4620 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/用户接口 Description: 用户接口 Position: 0
+2016-09-28 15:48:42.750  INFO 4620 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:48:42.750  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:48:42.758  INFO 4620 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:48:42.759  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2016-09-28 15:48:43.025  INFO 4620 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /error.org.springframework.boot.autoconfigure.web.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+2016-09-28 15:48:43.025  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+2016-09-28 15:48:43.057  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.064  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.070  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.074  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.077  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.079  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.082  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.084  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.088  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.090  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.093  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.095  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.097  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.100  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.102  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.104  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method error was basic-error-controller
+2016-09-28 15:48:43.110  INFO 4620 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:48:43.110  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:48:43.113  INFO 4620 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:48:43.113  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:48:43.163  INFO 4620 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:48:43.163  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:48:43.166  INFO 4620 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:48:43.166  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+2016-09-28 15:48:43.168  INFO 4620 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.View(true)
+2016-09-28 15:48:43.168  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+2016-09-28 15:48:43.172  INFO 4620 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: org.springframework.web.servlet.View(true)
+2016-09-28 15:48:43.172  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+2016-09-28 15:48:43.185  INFO 4620 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /error.org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+2016-09-28 15:48:43.188  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+2016-09-28 15:48:43.192  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.206  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.211  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.226  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.228  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.232  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.235  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.241  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.245  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.248  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.251  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.254  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.256  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.259  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.264  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.267  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method errorHtml was basic-error-controller
+2016-09-28 15:48:43.298  INFO 4620 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:48:43.299  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.jzli.bean.User(true)
+2016-09-28 15:48:43.299  INFO 4620 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.jzli.bean.User(true)
+2016-09-28 15:48:43.299  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.jzli.bean.User(true)
+2016-09-28 15:48:43.310  INFO 4620 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:48:43.310  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.jzli.bean.User(true)
+2016-09-28 15:48:43.311  INFO 4620 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.jzli.bean.User(true)
+2016-09-28 15:48:43.311  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.jzli.bean.User(true)
+2016-09-28 15:48:43.312  INFO 4620 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /user/{name}.com.jzli.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2016-09-28 15:48:43.312  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /user/{name}.com.jzli.controller.UserController.getUser.DefaultGenericTypeNamingStrategy
+2016-09-28 15:48:43.321  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:48:43.327  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 用户接口
+2016-09-28 15:48:43.333  INFO 4620 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:48:43.333  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.jzli.bean.User(true)
+2016-09-28 15:48:43.334  INFO 4620 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.jzli.bean.User(true)
+2016-09-28 15:48:43.334  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.jzli.bean.User(true)
+2016-09-28 15:48:43.335  INFO 4620 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2016-09-28 15:48:43.335  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2016-09-28 15:48:43.335  INFO 4620 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2016-09-28 15:48:43.335  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2016-09-28 15:48:43.336  INFO 4620 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /hello.com.jzli.controller.UserController.hello.DefaultGenericTypeNamingStrategy
+2016-09-28 15:48:43.336  INFO 4620 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /hello.com.jzli.controller.UserController.hello.DefaultGenericTypeNamingStrategy
+2016-09-28 15:48:43.338  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:48:43.343  INFO 4620 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was 用户接口
+2016-09-28 15:48:43.488  INFO 4620 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9999 (http)
+2016-09-28 15:48:43.499  INFO 4620 --- [main] com.jzli.Application                     : Started Application in 9.579 seconds (JVM running for 10.563)
+2016-09-28 15:49:27.792  INFO 4620 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/jzli]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-28 15:49:27.793  INFO 4620 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-28 15:49:27.834  INFO 4620 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2016-09-28 15:49:27.901  INFO 4620 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : URL : http://localhost:9999/jzli/hello
+2016-09-28 15:49:27.901  INFO 4620 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : HTTP METHOD : GET
+2016-09-28 15:49:27.902  INFO 4620 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : IP : 0:0:0:0:0:0:0:1
+2016-09-28 15:49:27.904  INFO 4620 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : CLASS METHOD : com.jzli.controller.UserController.hello
+2016-09-28 15:49:27.904  INFO 4620 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : REQUEST ARGS : []
+2016-09-28 15:49:27.915  INFO 4620 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : RESPONSE RESULT: hello
+2016-09-28 15:49:27.916  INFO 4620 --- [http-nio-9999-exec-1] com.jzli.config.AccessLogAspectConfig    : SPEND TIME : 15ms
+2016-09-28 15:49:32.242  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : URL : http://localhost:9999/jzli/hello
+2016-09-28 15:49:32.249  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : HTTP METHOD : GET
+2016-09-28 15:49:32.250  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : IP : 0:0:0:0:0:0:0:1
+2016-09-28 15:49:32.250  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : CLASS METHOD : com.jzli.controller.UserController.hello
+2016-09-28 15:49:32.250  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : REQUEST ARGS : []
+2016-09-28 15:49:32.250  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : RESPONSE RESULT: hello
+2016-09-28 15:49:32.250  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : SPEND TIME : 8ms
+2016-09-28 15:49:36.562  INFO 4620 --- [http-nio-9999-exec-3] com.jzli.config.AccessLogAspectConfig    : URL : http://localhost:9999/jzli/hello
+2016-09-28 15:49:36.562  INFO 4620 --- [http-nio-9999-exec-3] com.jzli.config.AccessLogAspectConfig    : HTTP METHOD : GET
+2016-09-28 15:49:36.563  INFO 4620 --- [http-nio-9999-exec-3] com.jzli.config.AccessLogAspectConfig    : IP : 0:0:0:0:0:0:0:1
+2016-09-28 15:49:36.563  INFO 4620 --- [http-nio-9999-exec-3] com.jzli.config.AccessLogAspectConfig    : CLASS METHOD : com.jzli.controller.UserController.hello
+2016-09-28 15:49:36.563  INFO 4620 --- [http-nio-9999-exec-3] com.jzli.config.AccessLogAspectConfig    : REQUEST ARGS : []
+2016-09-28 15:49:36.563  INFO 4620 --- [http-nio-9999-exec-3] com.jzli.config.AccessLogAspectConfig    : RESPONSE RESULT: hello
+2016-09-28 15:49:36.563  INFO 4620 --- [http-nio-9999-exec-3] com.jzli.config.AccessLogAspectConfig    : SPEND TIME : 1ms
+2016-09-28 15:49:47.122  INFO 4620 --- [http-nio-9999-exec-4] com.jzli.config.AccessLogAspectConfig    : URL : http://localhost:9999/jzli/user/%E6%98%AF%E7%9A%84%E8%8C%83%E5%BE%B7%E8%90%A8%E5%8F%91
+2016-09-28 15:49:47.122  INFO 4620 --- [http-nio-9999-exec-4] com.jzli.config.AccessLogAspectConfig    : HTTP METHOD : GET
+2016-09-28 15:49:47.122  INFO 4620 --- [http-nio-9999-exec-4] com.jzli.config.AccessLogAspectConfig    : IP : 0:0:0:0:0:0:0:1
+2016-09-28 15:49:47.122  INFO 4620 --- [http-nio-9999-exec-4] com.jzli.config.AccessLogAspectConfig    : CLASS METHOD : com.jzli.controller.UserController.getUser
+2016-09-28 15:49:47.122  INFO 4620 --- [http-nio-9999-exec-4] com.jzli.config.AccessLogAspectConfig    : REQUEST ARGS : [是的范德萨发]
+2016-09-28 15:49:47.123  INFO 4620 --- [http-nio-9999-exec-4] com.jzli.config.AccessLogAspectConfig    : RESPONSE RESULT: com.jzli.bean.User@1e478e40
+2016-09-28 15:49:47.123  INFO 4620 --- [http-nio-9999-exec-4] com.jzli.config.AccessLogAspectConfig    : SPEND TIME : 1ms
+2016-09-28 15:50:55.798  INFO 4620 --- [http-nio-9999-exec-9] com.jzli.config.AccessLogAspectConfig    : URL : http://192.168.51.80:9999/jzli/hello
+2016-09-28 15:50:55.798  INFO 4620 --- [http-nio-9999-exec-9] com.jzli.config.AccessLogAspectConfig    : HTTP METHOD : GET
+2016-09-28 15:50:55.799  INFO 4620 --- [http-nio-9999-exec-9] com.jzli.config.AccessLogAspectConfig    : IP : 192.168.51.80
+2016-09-28 15:50:55.799  INFO 4620 --- [http-nio-9999-exec-9] com.jzli.config.AccessLogAspectConfig    : CLASS METHOD : com.jzli.controller.UserController.hello
+2016-09-28 15:50:55.799  INFO 4620 --- [http-nio-9999-exec-9] com.jzli.config.AccessLogAspectConfig    : REQUEST ARGS : []
+2016-09-28 15:50:55.799  INFO 4620 --- [http-nio-9999-exec-9] com.jzli.config.AccessLogAspectConfig    : RESPONSE RESULT: hello
+2016-09-28 15:50:55.799  INFO 4620 --- [http-nio-9999-exec-9] com.jzli.config.AccessLogAspectConfig    : SPEND TIME : 1ms
+2016-09-28 15:51:35.436  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : URL : http://192.168.51.80:9999/jzli/hello
+2016-09-28 15:51:35.437  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : HTTP METHOD : GET
+2016-09-28 15:51:35.438  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : IP : 192.168.51.142
+2016-09-28 15:51:35.438  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : CLASS METHOD : com.jzli.controller.UserController.hello
+2016-09-28 15:51:35.438  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : REQUEST ARGS : []
+2016-09-28 15:51:35.438  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : RESPONSE RESULT: hello
+2016-09-28 15:51:35.438  INFO 4620 --- [http-nio-9999-exec-2] com.jzli.config.AccessLogAspectConfig    : SPEND TIME : 2ms

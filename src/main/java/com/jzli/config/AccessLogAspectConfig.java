@@ -15,10 +15,9 @@ import java.util.Arrays;
 
 @Aspect
 @Component
-public class AccessLogAspect {
+public class AccessLogAspectConfig {
 
     private Logger logger = Logger.getLogger(getClass());
-
     private ThreadLocal<Long> startTime = new ThreadLocal<>();
 
     @Pointcut("execution(public * com.jzli.controller..*.*(..))")
@@ -35,18 +34,19 @@ public class AccessLogAspect {
 
         // 记录下请求内容
         logger.info("URL : " + request.getRequestURL().toString());
-        logger.info("HTTP_METHOD : " + request.getMethod());
+        logger.info("HTTP METHOD : " + request.getMethod());
         logger.info("IP : " + request.getRemoteAddr());
-        logger.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
-        logger.info("ARGS : " + Arrays.toString(joinPoint.getArgs()));
+        logger.info("CLASS METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
+        logger.info("REQUEST ARGS : " + Arrays.toString(joinPoint.getArgs()));
 
     }
 
     @AfterReturning(returning = "result", pointcut = "access()")
     public void doAfterReturning(Object result) throws Throwable {
         // 处理完请求，返回内容
-        logger.info("RESPONSE : " + result);
+        logger.info("RESPONSE RESULT: " + result);
         logger.info("SPEND TIME : " + (System.currentTimeMillis() - startTime.get()) + "ms");
+
     }
 
 }
