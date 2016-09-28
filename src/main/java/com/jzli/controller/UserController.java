@@ -31,4 +31,10 @@ public class UserController {
     public User getUser(@ApiParam(required = true, name = "name", value = "用户名") @PathVariable("name") String name) {
         return new User(counter.getAndIncrement(), name);
     }
+
+    @RequestMapping(value = "hello", method = RequestMethod.GET)
+    @ApiOperation(value = "hello", httpMethod = "GET", response = User.class)
+    public String hello() {
+        return "hello";
+    }
 }
