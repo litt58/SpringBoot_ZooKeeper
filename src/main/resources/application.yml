@@ -7,6 +7,9 @@ logging:
   level: info
   file: ./log/info.log
 
+spring:
+  zookeeper:
+    address: 10.10.36.17:2181
 
 
 

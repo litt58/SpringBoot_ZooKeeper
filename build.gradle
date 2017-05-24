@@ -38,6 +38,11 @@ dependencies {
     //swagger2
     compile "io.springfox:springfox-swagger-ui:2.2.2"
     compile "io.springfox:springfox-swagger2:2.2.2"
+
+    //zookeeper
+    compile("org.apache.zookeeper:zookeeper:3.4.0") {
+        exclude(group: 'org.slf4j', module: 'slf4j-log4j12')
+    }
 }
 task wrapper(type: Wrapper) {
     gradleVersion = '2.14'
