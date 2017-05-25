@@ -64,7 +64,7 @@
 		</filter> 
 	</appender>
 	
-	<logger name="com.jyall" level="INFO">
+	<logger name="com.jzli" level="INFO">
 		<appender-ref ref="infoDailyRollingFile" />
 		<appender-ref ref="severeDailyRollingFile" />
 	</logger>
