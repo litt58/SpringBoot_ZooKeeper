@@ -22,10 +22,14 @@ public class ZKConnectTest implements Watcher {
         ZooKeeper zooKeeper = new ZooKeeper("10.10.36.17:2181", 5000, new ZKConnectTest());
         countDownLatch.await();
         System.out.println(zooKeeper.getState().toString());
-//        zooKeeper.create("/bbb", "aaa".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
-        byte[] data = zooKeeper.getData("/aaa", Boolean.TRUE, null);
+//        zooKeeper.create("/a", "aaa".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+        byte[] data = zooKeeper.getData("/a", Boolean.TRUE, null);
         System.out.println(new String(data));
-        TimeUnit.SECONDS.sleep(60);
+        zooKeeper.getChildren("/a", true);
+        zooKeeper.getData("/abcdef", true, null);
+
+        zooKeeper.setData("/abcdef", "ddd".getBytes(), -1);
+        TimeUnit.SECONDS.sleep(600);
     }
 
     @Override

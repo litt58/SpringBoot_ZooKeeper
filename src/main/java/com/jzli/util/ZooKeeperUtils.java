@@ -103,6 +103,19 @@ public class ZooKeeperUtils implements EnvironmentAware {
     }
 
     /**
+     * 创建节点
+     *
+     * @param path
+     * @param value
+     * @throws UnsupportedEncodingException
+     * @throws KeeperException
+     * @throws InterruptedException
+     */
+    public static void set(String path, String value) throws UnsupportedEncodingException, KeeperException, InterruptedException {
+        getInstance().setData(getPath(path), value.getBytes(), -1);
+    }
+
+    /**
      * 获取节点自增
      *
      * @param path

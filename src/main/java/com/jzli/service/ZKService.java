@@ -102,10 +102,11 @@ public class ZKService {
                 //判断节点是否存在，不存在则创建节点
                 if (!exists(path)) {
                     ZooKeeperUtils.create(path, value.toString());
-                    return Boolean.TRUE;
+                } else {
+                    ZooKeeperUtils.set(path, value.toString());
                 }
             }
-            return Boolean.FALSE;
+            return Boolean.TRUE;
         } catch (Exception e) {
             logger.error(e.getMessage(), e);
         }
