@@ -25,6 +25,12 @@ public class ZKController {
     @Autowired
     private ZKService zkService;
 
+    @RequestMapping(value = "/increase{path}", method = RequestMethod.GET)
+    @ApiOperation(value = "increase", httpMethod = "GET", response = Boolean.class)
+    public String increase(@ApiParam(required = true, name = "path", value = "路径") @PathVariable("path") String path) {
+        return zkService.increase(path);
+    }
+
     @RequestMapping(value = "/lock{path}", method = RequestMethod.GET)
     @ApiOperation(value = "lock", httpMethod = "GET", response = Boolean.class)
     public Boolean lock(@ApiParam(required = true, name = "path", value = "路径") @PathVariable("path") String path) {
@@ -54,6 +60,12 @@ public class ZKController {
     @ApiOperation(value = "set", httpMethod = "POST", response = Boolean.class)
     public Boolean set(@ApiParam(required = true, name = "json", value = "json对象") @RequestBody JSONObject jsonObject) {
         return zkService.set(jsonObject);
+    }
+
+    @RequestMapping(value = "/watch{path}", method = RequestMethod.GET)
+    @ApiOperation(value = "watch", httpMethod = "GET", response = String.class)
+    public Boolean watch(@ApiParam(required = true, name = "get", value = "路径") @PathVariable("path") String path) {
+        return zkService.exists(path);
     }
 
 }

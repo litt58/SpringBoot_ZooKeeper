@@ -26,6 +26,30 @@ public class ZKService {
     private static final Logger logger = LoggerFactory.getLogger(ZKService.class);
 
     /**
+     * 获取自增序号
+     *
+     * @param path
+     * @return
+     */
+    public String increase(String path) {
+        String result = null;
+        try {
+            //判断节点是否存在,不存在则创建节点
+            if (!exists(path)) {
+                //创建节点，锁资源
+                result = ZooKeeperUtils.increase(path, UUID.randomUUID().toString());
+                if (!ObjectUtils.isEmpty(result)) {
+                    result = result.replace("/", "");
+                }
+                unlock(result);
+            }
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+        }
+        return result;
+    }
+
+    /**
      * 锁资源
      *
      * @param path

@@ -103,6 +103,20 @@ public class ZooKeeperUtils implements EnvironmentAware {
     }
 
     /**
+     * 获取节点自增
+     *
+     * @param path
+     * @param value
+     * @throws UnsupportedEncodingException
+     * @throws KeeperException
+     * @throws InterruptedException
+     */
+    public static String increase(String path, String value) throws UnsupportedEncodingException, KeeperException, InterruptedException {
+        String result = getInstance().create(getPath(path), value.getBytes(charset), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
+        return result;
+    }
+
+    /**
      * 获取节点的值
      *
      * @param path
