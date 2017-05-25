@@ -44,7 +44,8 @@ public class Swagger2Config {
 
     private Predicate<String> petstorePaths() {
         return or(
-                regex("/user.*")
+                regex("/user.*"),
+                regex("/zooKeeper.*")
         );
     }
 }

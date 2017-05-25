@@ -136,7 +136,11 @@ public class ZooKeeperUtils implements EnvironmentAware {
      */
     public static Boolean exists(String path) throws KeeperException, InterruptedException {
         Stat exists = getInstance().exists(getPath(path), Boolean.TRUE);
-        return Boolean.TRUE;
+        if (!ObjectUtils.isEmpty(exists)) {
+            return Boolean.TRUE;
+        } else {
+            return Boolean.FALSE;
+        }
     }
 
     /**
