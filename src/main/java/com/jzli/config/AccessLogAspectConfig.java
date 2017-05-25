@@ -6,7 +6,6 @@ import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -16,7 +15,6 @@ import java.util.Arrays;
 
 @Aspect
 @Component
-@Order(2)
 public class AccessLogAspectConfig {
 
     private Logger logger = Logger.getLogger(getClass());
