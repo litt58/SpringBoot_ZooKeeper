@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
@@ -34,15 +35,12 @@ public class ZKService {
     public String increase(String path) {
         String result = null;
         try {
-            //判断节点是否存在,不存在则创建节点
-            if (!exists(path)) {
-                //创建节点，锁资源
-                result = ZooKeeperUtils.increase(path, UUID.randomUUID().toString());
-                if (!ObjectUtils.isEmpty(result)) {
-                    result = result.replace("/", "");
-                }
-                unlock(result);
+            //创建节点，锁资源
+            result = ZooKeeperUtils.increase(path, UUID.randomUUID().toString());
+            if (!ObjectUtils.isEmpty(result)) {
+                result = result.replace("/", "");
             }
+            unlock(result);
         } catch (Exception e) {
             logger.error(e.getMessage(), e);
         }
@@ -163,5 +161,20 @@ public class ZKService {
             logger.error(e.getMessage(), e);
         }
         return Boolean.FALSE;
+    }
+
+    /**
+     * 获取子节点
+     *
+     * @param path
+     * @return
+     */
+    public List<String> getChildren(String path) {
+        try {
+            return ZooKeeperUtils.getChildren(path);
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+        }
+        return null;
     }
 }

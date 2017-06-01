@@ -12,6 +12,8 @@ import org.springframework.util.ObjectUtils;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
@@ -137,7 +139,7 @@ public class ZooKeeperUtils implements EnvironmentAware {
      * @throws KeeperException
      * @throws InterruptedException
      */
-    public static String getData(String path) throws KeeperException, InterruptedException {
+    public static String getData(String path) throws KeeperException, InterruptedException, UnsupportedEncodingException {
         byte[] data = getInstance().getData(getPath(path), Boolean.TRUE, null);
         return new String(data);
     }
@@ -149,7 +151,7 @@ public class ZooKeeperUtils implements EnvironmentAware {
      * @throws KeeperException
      * @throws InterruptedException
      */
-    public static void delete(String path) throws KeeperException, InterruptedException {
+    public static void delete(String path) throws KeeperException, InterruptedException, UnsupportedEncodingException {
         getInstance().delete(getPath(path), -1);
     }
 
@@ -161,7 +163,7 @@ public class ZooKeeperUtils implements EnvironmentAware {
      * @throws KeeperException
      * @throws InterruptedException
      */
-    public static Boolean exists(String path) throws KeeperException, InterruptedException {
+    public static Boolean exists(String path) throws KeeperException, InterruptedException, UnsupportedEncodingException {
         Stat exists = getInstance().exists(getPath(path), Boolean.TRUE);
         if (!ObjectUtils.isEmpty(exists)) {
             return Boolean.TRUE;
@@ -170,18 +172,23 @@ public class ZooKeeperUtils implements EnvironmentAware {
         }
     }
 
+    public static List<String> getChildren(String path) throws KeeperException, InterruptedException, UnsupportedEncodingException {
+        return getInstance().getChildren(getPath(path), null);
+    }
+
     /**
      * 解析路径，判断是否以“/”开头
      *
      * @param path
      * @return
      */
-    public static String getPath(String path) {
+    public static String getPath(String path) throws UnsupportedEncodingException {
+        String decode = URLDecoder.decode(path, "utf-8");
         StringBuilder builder = new StringBuilder();
-        if (!path.startsWith("/")) {
+        if (!decode.startsWith("/")) {
             builder.append("/");
         }
-        builder.append(path);
+        builder.append(decode);
         return builder.toString();
     }
 

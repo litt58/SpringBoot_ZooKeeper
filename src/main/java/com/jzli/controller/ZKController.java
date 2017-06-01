@@ -25,32 +25,32 @@ public class ZKController {
     @Autowired
     private ZKService zkService;
 
-    @RequestMapping(value = "/increase{path}", method = RequestMethod.GET)
+    @RequestMapping(value = "/increase/{path}", method = RequestMethod.GET)
     @ApiOperation(value = "increase", httpMethod = "GET", response = Boolean.class)
     public String increase(@ApiParam(required = true, name = "path", value = "路径") @PathVariable("path") String path) {
         return zkService.increase(path);
     }
 
-    @RequestMapping(value = "/lock{path}", method = RequestMethod.GET)
+    @RequestMapping(value = "/lock/{path}", method = RequestMethod.GET)
     @ApiOperation(value = "lock", httpMethod = "GET", response = Boolean.class)
     public Boolean lock(@ApiParam(required = true, name = "path", value = "路径") @PathVariable("path") String path) {
         return zkService.lock(path);
     }
 
 
-    @RequestMapping(value = "/unlock{path}", method = RequestMethod.GET)
+    @RequestMapping(value = "/unlock/{path}", method = RequestMethod.GET)
     @ApiOperation(value = "unlock", httpMethod = "GET", response = Boolean.class)
     public Boolean unlock(@ApiParam(required = true, name = "path", value = "路径") @PathVariable("path") String path) {
         return zkService.unlock(path);
     }
 
-    @RequestMapping(value = "/get{path}", method = RequestMethod.GET)
+    @RequestMapping(value = "/get/{path}", method = RequestMethod.GET)
     @ApiOperation(value = "get", httpMethod = "GET", response = String.class)
     public String get(@ApiParam(required = true, name = "get", value = "路径") @PathVariable("path") String path) {
         return zkService.get(path);
     }
 
-    @RequestMapping(value = "/exists{path}", method = RequestMethod.GET)
+    @RequestMapping(value = "/exists/{path}", method = RequestMethod.GET)
     @ApiOperation(value = "exists", httpMethod = "GET", response = String.class)
     public Boolean exists(@ApiParam(required = true, name = "get", value = "路径") @PathVariable("path") String path) {
         return zkService.exists(path);
@@ -62,10 +62,16 @@ public class ZKController {
         return zkService.set(jsonObject);
     }
 
-    @RequestMapping(value = "/watch{path}", method = RequestMethod.GET)
+    @RequestMapping(value = "/watch/{path}", method = RequestMethod.GET)
     @ApiOperation(value = "watch", httpMethod = "GET", response = String.class)
     public Boolean watch(@ApiParam(required = true, name = "get", value = "路径") @PathVariable("path") String path) {
         return zkService.exists(path);
+    }
+
+    @RequestMapping(value = "/getChildren/{path}", method = RequestMethod.GET)
+    @ApiOperation(value = "getChildren", httpMethod = "GET", response = String.class)
+    public Object getChildren(@ApiParam(required = true, name = "get", value = "路径") @PathVariable("path") String path) {
+        return zkService.getChildren(path);
     }
 
 }
