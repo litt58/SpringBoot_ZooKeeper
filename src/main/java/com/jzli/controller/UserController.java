@@ -32,10 +32,4 @@ public class UserController {
         User user = new User(counter.getAndIncrement(), name);
         return user;
     }
-
-    @RequestMapping(value = "hello", method = RequestMethod.GET)
-    @ApiOperation(value = "hello", httpMethod = "GET", response = User.class)
-    public String hello() {
-        return "hello";
-    }
 }
