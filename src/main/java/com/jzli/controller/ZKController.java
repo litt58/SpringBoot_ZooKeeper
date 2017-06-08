@@ -65,7 +65,9 @@ public class ZKController {
     @RequestMapping(value = "/watch/{path}", method = RequestMethod.GET)
     @ApiOperation(value = "watch", httpMethod = "GET", response = String.class)
     public Boolean watch(@ApiParam(required = true, name = "get", value = "路径") @PathVariable("path") String path) {
+
         return zkService.exists(path);
+
     }
 
     @RequestMapping(value = "/getChildren/{path}", method = RequestMethod.GET)
